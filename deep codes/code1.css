@@ -1,0 +1,118 @@
+/* General Styling */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Detection Boxes Section */
+.detection-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box {
+    flex: 1;
+    margin: 0 10px;
+    height: 500px; /* Fixed height for the rectangle */
+    width: 300px;  /* Increased width for a better balance */
+    background-color: #f4f4f4;
+    border-radius: 20px; /* More rounded corners */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+    /* Flexbox properties for centering content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center;     /* Horizontally center */
+    padding: 30px;           /* Add more padding for spacing */
+}
+
+.box img {
+    max-width: 1200px; /* Adjusted image size */
+    height: auto;     /* Maintain aspect ratio */
+    margin-bottom: 30px;
+    border-radius: 12px;
+}
+
+.box h2 {
+    margin-top: 15px;
+    font-size: 1.8em; /* Increased heading font size */
+}
+
+.box p {
+    margin-top: 15px;
+    font-size: 1.2em; /* Increased paragraph font size */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Glowing effect */
+}
+
+#audio-detection {
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+#video-detection {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#image-detection {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
